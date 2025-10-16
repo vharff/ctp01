@@ -15,13 +15,15 @@
 #include "utils.h"
 
 int main(){
-    
+    printf('entering main');
+
     const int N = 10;
     double *A   = (double*) malloc(N*N*sizeof(double));
     double *b   = (double*) malloc(N*sizeof(double));
     double *sol = (double*) malloc(N*sizeof(double));
     double *x   = (double*) malloc(N*sizeof(double));
-    
+    printf('variables declared');
+
     // Create system ------------------------------------
     make_system(N, A, b, sol);
     

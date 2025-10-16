@@ -13,3 +13,5 @@ extern void dgemv_(const char*, const int *, const int *, const double *,
   const double[], const int *, const double[], const int *, const double *,
   double[], const int*);
 
+extern void dgesv_(int, int,double[], int, int *, double[], int, int);
+

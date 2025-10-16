@@ -16,7 +16,7 @@ CFLAG = -g -O2 -Wall
 LIBS = -lblas -llapack
 
 exo2: exercice2.o utils.o
-	$(CC) $(CFLAG) $(LIBS) utils.o exercice2.o -o exo2
+	$(CC) $(CFLAG) $(LIBS) utils.o exercice2.o -o exo2 -lm -lblas -llapack
 	
 utils.o: utils.c utils.h
 	$(CC) $(CFLAG) -c utils.c

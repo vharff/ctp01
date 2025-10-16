@@ -96,14 +96,15 @@ void solve(int n, double *A, double *b, double *x){
     // Warning: dgesv() modifies A and b when called.
     
     double *Acopy = (double*) malloc(n*n*sizeof(double));
-
-    A,IPIV,B,INFO = dgesv_(&n,1,A,&n,B,&LDB);
+    int INFO=0;
+    int IPIV[n];
+    dgesv_(n,1,A,n,IPIV,b,n,INFO);
     // ***********************************************
     // IMPLEMENTER ICI l'appel à la routine DGESV()
     // ***********************************************
-
     
     free(Acopy);
+
     
 }
 // -----------------------------------------------------------------
