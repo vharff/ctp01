@@ -1,0 +1,23 @@
+# Parameter file for program "advection.c".
+# Lines starting with # or a white space are ignored
+# empty lines are ignored
+# Other lines must start with the parameter name, contain the = sign and then the value.
+# Spaces are ignored
+
+
+# Number of points for space grid 
+# -------------------------------
+nx   = 64  
+
+
+# CFL parameter (>0)
+# -------------------------------
+cfl  = 0.95
+
+
+# Approximate last time
+# -------------------------------
+tmax = 0.1
+
+
+
